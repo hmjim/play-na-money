@@ -1,0 +1,67 @@
+.item-news-wrap
+	width: 100%
+
+.item-news
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 20px
+
+.item-news-img
+	width: 25%
+	display: block
+	border-radius: $border-radius 0 0 $border-radius
+	overflow: hidden
+	+r(1259)
+		width: 50%
+	+r(767)
+		width: 100%
+		border-radius: $border-radius $border-radius 0 0
+
+.item-news-text
+	padding: 15px 15px 15px 30px
+	width: 75%
+	background-color: $color-white
+	border: 2px solid $color-border
+	border-left-width: 0
+	border-radius: 0 $border-radius $border-radius 0
+	+r(1259)
+		width: 50%
+	+r(767)
+		padding: 20px 15px
+		width: 100%
+		border-left-width: 2px
+		border-top-width: 0
+		border-radius: 0 0 $border-radius $border-radius
+	+nm
+		background-color: $lighten10
+		border-color: lighten($color-grey, 20%)
+
+.item-news-title
+	display: inline-block
+	color: $color-dark
+	font-size: 18px
+	font-weight: 600
+	text-decoration: none
+	margin-bottom: 10px
+	+nm
+		color: $color-white
+
+	&:hover
+		color: $color-accent
+		+nm
+			color: lighten($color-accent, 20%)
+
+.item-news-descr
+	font-size: 16px
+
+	a
+		color: #a9a6a6
+		text-decoration: none
+
+		&:hover
+			color: $color-accent
+
+	*
+
+		&:last-child
+			margin-bottom: 0

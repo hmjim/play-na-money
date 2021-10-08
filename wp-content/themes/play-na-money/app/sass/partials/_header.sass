@@ -1,0 +1,93 @@
+.header
+
+	&__wrapper
+		padding: 28px 0
+		+r(991)
+			padding: 15px 0
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		+r(991)
+			justify-content: space-between
+
+	&__logo
+		+r(991)
+			flex-grow: 1
+
+		a
+			+r(575)
+				display: inline-block
+				max-width: 160px
+			+r(374)
+				max-width: 120px
+
+	&__btns
+		display: flex
+
+	&__search
+		padding-top: 10px
+		width: 100%
+		display: none
+		order: 4
+
+		&-btn
+			width: 66px
+			height: 66px
+			position: relative
+			background-color: $color-blue-light
+			box-shadow: 4px 4px 8px #c7ddf4
+			border-radius: $border-radius
+			margin-left: 20px
+			cursor: pointer
+			order: 2
+			+r(1259)
+				margin-left: 10px
+			+r(374)
+				margin-left: 15px
+				width: 50px
+				height: 50px
+				border-radius: 4px
+
+			&::before
+				position: absolute
+				content: ''
+				width: 100%
+				height: 100%
+				+svg(search)
+				background-repeat: no-repeat
+				background-position: center
+
+		&.is-open
+			display: block
+
+		.cf
+			display: flex
+
+			input
+				height: 66px
+				border: 0
+				outline: none
+				background-color: $color-white
+				box-shadow: 4px 4px 8px #cfe0ed
+				+r(991)
+					height: 56px
+
+				&[type=search]
+					padding: 0 38px
+					border-radius: $border-radius 0 0 $border-radius
+					flex-grow: 1
+					+r(991)
+						padding: 0 20px
+
+				&[type=submit]
+					width: 60px
+					+svg(search)
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 20px
+					border-left: 4px solid $color-bg
+					border-radius: 0 $border-radius $border-radius 0
+					+r(575)
+						width: 40px

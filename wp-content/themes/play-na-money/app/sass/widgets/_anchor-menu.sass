@@ -1,0 +1,73 @@
+.anchor
+
+	&__wrapper
+		margin-bottom: 100px
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -15px
+
+	&__content
+		width: 66.6667%
+		padding-left: 15px
+		padding-right: 15px
+		+r(991)
+			width: 100%
+			margin-left: 0
+			order: 2
+
+		&-section
+
+			&:not(:last-child)
+				margin-bottom: 40px
+
+	&__sidebar
+		width: 33.3333%
+		padding-left: 15px
+		padding-right: 15px
+		position: relative
+		+r(991)
+			width: 100%
+			margin-bottom: 30px
+			order: 1
+
+	&__menu
+		margin: 0
+		padding: 0
+		list-style-type: none
+
+		li
+			position: relative
+
+			&:not(:last-child)
+				margin-bottom: 20px
+
+				&::before
+					position: absolute
+					content: ''
+					width: 15px
+					height: 27px
+					left: calc(50% - 7px)
+					top: 100%
+					z-index: 1
+					+svg(anchor)
+
+		a
+			padding: 18px 25px 18px 72px
+			display: block
+			color: $color-text
+			text-decoration: none
+			background-color: $color-blue-light
+			box-shadow: 4px 4px 8px #c7ddf4
+			border-radius: $border-radius
+
+			img
+				position: absolute
+				top: 50%
+				left: 25px
+				transform: translateY(-50%)
+
+			&:hover
+				background-color: $color-white
+				box-shadow: 4px 4px 8px #cfe0ed

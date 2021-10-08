@@ -1,0 +1,6 @@
+<svg width="15" height="27" viewBox="0 0 15 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line opacity="0.5" y1="-1" x2="12" y2="-1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 7 12)" stroke="#2E47D7" stroke-width="2" stroke-dasharray="4 4"/>
+<circle opacity="0.5" cx="7.5" cy="19.5" r="7.5" transform="rotate(-180 7.5 19.5)" fill="#2E47D7"/>
+<circle cx="7.5" cy="19.5" r="5.5" transform="rotate(-180 7.5 19.5)" fill="white"/>
+<circle opacity="0.75" cx="7.5" cy="19.5" r="3.5" transform="rotate(-180 7.5 19.5)" fill="#2E47D7"/>
+</svg>

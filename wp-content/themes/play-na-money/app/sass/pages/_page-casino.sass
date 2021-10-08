@@ -1,0 +1,248 @@
+.casino
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+
+	&:not(:last-child)
+		margin-bottom: 30px
+
+	&__items
+		counter-reset: cas
+
+		.casino
+
+			.casino__logo
+
+				.percent-bar
+					position: relative
+
+					&::before
+						position: absolute
+						counter-increment: cas
+						content: counter(cas)
+						top: 0
+						left: -35px
+						width: 50px
+						text-align: center
+						font-family: $font-montserrat
+						font-weight: 700
+						font-size: 60px
+						line-height: 54px
+						background: linear-gradient(135deg, #929292 0%,#fff 75%,#fff 100%)
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#929292', endColorstr='#ffffff',GradientType=1 )
+						-webkit-background-clip: text
+						-webkit-text-fill-color: transparent
+
+					svg
+
+						circle
+							stroke: $color-grey
+
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5)
+
+				.casino__logo
+
+					.percent-bar
+
+						&::before
+							background: linear-gradient(135deg, #00d0ff 0%,#fff 75%,#fff 100%)
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d0ff', endColorstr='#ffffff',GradientType=1 )
+							-webkit-background-clip: text
+							-webkit-text-fill-color: transparent
+
+						svg
+
+							circle
+								stroke: $color-blue
+
+	&__inner
+		display: flex
+		background-color: $color-white
+		border: 2px solid rgba(46, 71, 215, 0.5)
+		border-radius: 30px
+		+r(1259)
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+
+	&__logo
+		padding: 30px 40px 30px 60px
+		+r(1259)
+			padding: 30px 32px 30px 44px
+		+r(767)
+			padding: 20px 32px
+
+		.percent-bar
+
+			svg
+
+				circle
+					stroke: $color-blue
+
+	&__features
+		flex-grow: 1
+		display: flex
+		align-items: center
+		justify-content: center
+
+		&-inner
+			padding: 28px 10px 28px 60px
+			display: flex
+			align-items: center
+			position: relative
+			max-width: 350px
+			+r(767)
+				padding: 10px 10px 28px 60px
+			+r(399)
+				padding: 10px 10px 28px 50px
+				max-width: 320px
+			+r(374)
+				padding: 10px 10px 28px
+				max-width: 280px
+				flex-direction: column
+
+		&-title
+			display: inline-block
+			padding: 5px 15px
+			font-family: $font-montserrat
+			color: $color-blue
+			font-size: 14px
+			line-height: 20px
+			text-align: center
+			text-transform: uppercase
+			border: 1px solid $color-blue
+			border-radius: 20px
+			transform: rotate(-90deg) translateY(-113px)
+			margin: 0
+			width: 150px
+			position: absolute
+			+r(399)
+				transform: rotate(-90deg) translateY(-100px)
+			+r(374)
+				position: relative
+				transform: none
+				margin-bottom: 20px
+
+		&-list
+			padding: 0
+			margin: 0
+			height: 150px
+			list-style-type: none
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			position: relative
+
+			&::before
+				position: absolute
+				content: ''
+				width: 267px
+				height: 0
+				top: calc(50% - 1px)
+				left: -22px
+				border: 2px dashed rgba($color-blue, .5)
+				+r(399)
+					width: 233px
+					left: -7px
+				+r(374)
+					width: 190px
+					left: 35px
+
+			li
+				width: 80px
+				margin-right: 20px
+				position: relative
+				+r(399)
+					margin-right: 10px
+
+				&:nth-child(3n)
+					margin-right: 0
+
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3)
+					margin-bottom: 25px
+
+					&::before,
+					&::after
+						position: absolute
+						content: ''
+
+					&::before
+						width: 0
+						height: 25px
+						top: 100%
+						left: calc(50% - 1px)
+						border: 2px dashed rgba($color-blue, .5)
+
+					&::after
+						width: 15px
+						height: 15px
+						bottom: -33px
+						left: calc(50% - 7px)
+						z-index: 1
+						+svg(psdot)
+
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(6)
+					margin-top: 25px
+
+					&::before
+						position: absolute
+						content: ''
+						width: 0
+						height: 25px
+						bottom: 100%
+						left: calc(50% - 1px)
+						border: 2px dashed rgba($color-blue, .5)
+
+				a,
+				span
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 7px
+					height: 50px
+					background-color: $color-blue-light
+					box-shadow: 4px 4px 8px #c7ddf4
+					border-radius: 15px
+					transition: $transition-fast
+
+				a
+
+					&:hover
+						background-color: $color-white
+						box-shadow: 4px 4px 8px #cfe0ed
+
+	&__nav
+		padding: 0 40px
+		background-color: $color-blue-light
+		border-radius: 0 28px 28px 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		+r(1259)
+			padding: 20px 15px
+			border-radius: 0 0 28px 28px
+			flex-direction: row
+			flex-grow: 1
+
+		.btn
+
+			+ .btn
+				margin-top: 20px
+				+r(1259)
+					margin-top: 0
+					margin-left: 15px
+
+			&-review,
+			&-site
+				width: 130px
+				+r(374)
+					width: 110px

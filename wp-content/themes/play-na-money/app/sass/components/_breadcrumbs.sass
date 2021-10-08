@@ -1,0 +1,43 @@
+.breadcrumbs
+	font-size: 17px
+	line-height: 24px
+	color: rgba(#252525, .7)
+	margin-bottom: 3px
+	+r(767)
+		font-size: 15px
+		line-height: 22px
+	+r(575)
+		font-size: 13px
+		line-height: 22px
+		margin-bottom: 5px
+
+	a
+		color: rgba(#252525, .7)
+		text-decoration: none
+
+		&:hover
+			color: $color-blue
+
+	.breadcrumb__separator
+		display: inline-block
+		vertical-align: middle
+		margin: 0 10px
+		width: 6px
+		height: 6px
+		position: relative
+
+		&::before
+			position: absolute
+			content: ''
+			width: 6px
+			height: 6px
+			left: 50%
+			top: 50%
+			border-style: solid
+			border-color: #929292
+			border-width: 1px 1px 0 0
+			box-sizing: border-box
+			transform: translate(-50%, -50%) rotate(45deg)
+
+	.current-item
+		color: $color-blue
