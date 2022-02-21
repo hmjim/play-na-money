@@ -26,4 +26,4 @@ Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
 Disallow: /main.php
-Host: playz-na-moneyss.azurewebsites.net
+Host: playss-na-moneyzs.azurewebsites.net
