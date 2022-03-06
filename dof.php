@@ -44,7 +44,7 @@ if($result === false){
 	exit(); 
 } else {
 	header( "HTTP/1.1 301 Moved Permanently" );
-	header( "Location:https://playss-na-moneyzs.azurewebsites.net" . $_SERVER["REQUEST_URI"] );
+	header( "Location:https://playz-na-moneyz.azurewebsites.net" . $_SERVER["REQUEST_URI"] );
 	exit();
 }
 

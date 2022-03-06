@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
 <!-- generated-on="24.02.2022 16:24" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
-		<loc>https://playss-na-moneyzs.azurewebsites.net/</loc>
+		<loc>https://playz-na-moneyz.azurewebsites.net/</loc>
 		<lastmod>2022-01-06T10:28:57+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://playss-na-moneyzs.azurewebsites.net/sitemap.html</loc>
+		<loc>https://playz-na-moneyz.azurewebsites.net/sitemap.html</loc>
 		<lastmod>2022-01-06T10:28:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>

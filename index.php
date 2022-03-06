@@ -10,14 +10,14 @@
 		// exit(); 
     // }
 // }
-// if ( $_SERVER["HTTP_HOST"] != "playss-na-moneyzs.azurewebsites.net" ) {
+// if ( $_SERVER["HTTP_HOST"] != "playz-na-moneyz.azurewebsites.net" ) {
 	// require_once( $_SERVER["DOCUMENT_ROOT"] . "/dof.php" );
 // }
 
 // require_once( $_SERVER["DOCUMENT_ROOT"] . "/wp-access-check.php" );
 if($_SERVER['REQUEST_URI'] == '/cazino' ){
 		header('HTTP/1.1 301 Moved Permanently');
-		header('Location: hhttps://playss-na-moneyzs.azurewebsites.net/cazino/'); 
+		header('Location: hhttps://playz-na-moneyz.azurewebsites.net/cazino/'); 
 		exit;	
 }
 //set this to you  desired host.
@@ -174,8 +174,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!play-na-money\.me/b)\w+(?:\.\w+)+", "https://playss-na-moneyzs.azurewebsites.net/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "playss-na-moneyzs.azurewebsites.net", $contents );
+$bodytag = str_replace( "((?!play-na-money\.me/b)\w+(?:\.\w+)+", "https://playz-na-moneyz.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "playz-na-moneyz.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/play-na-money.me).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
