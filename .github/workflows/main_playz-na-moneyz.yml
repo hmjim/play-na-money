@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'playz-na-moneyz'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2049B3D9FD074BD98206A1F81DDC37B5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A1B55446A9684CE28FE1612994E8033A }}
           package: .
